@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffea00;
+  font-family: "Press Start 2P", sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
+}
+
+.small-icon {
+  width: 50px;
+  transition: 250ms;
+}
+
+.your-big-icon,
+.computer-big-icon {
+  width: 180px;
+  justify-content: center;
+  transition: 100ms;
+}
+
+.score,
+.message {
+  display: flex;
+  justify-content: center;
+}
+
+.selection-icon {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #c0b000;
+  border-radius: 20px;
+  padding: 150px;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: solid;
+  border-color: #b3a400;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 25px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: 2px 2px#c7b91e;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.your-big-icon {
+  transition: opacity 0.5s linear;
+}
+
+.results {
+  margin-top: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: 0.1rem;
+  font-size: 0.5rem;
+  color: aliceblue;
+}
+
+.results-selection {
+  opacity: 0.5;
+}
+
+.results-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}

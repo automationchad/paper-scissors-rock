@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <!-- Round Counter -->
+    <div class="round">
+      <h1>Round: <span class="round-number" round-count>0</span></h1>
+    </div>
+
+    <!-- Win Counter -->
+    <div class="row">
+      <div class="column">
+        <div class="score">
+          <h2>YOU : <span class="win-score" data-your-score>0</span></h2>
+        </div>
+
+        <div class="selection-icon">
+          <img class="your-big-icon" src="" />
+        </div>
+
+        <div class="selections">
+          <button class="selection" data-selection="paper">
+            <img class="small-icon" src="/paper.png" alt="" />
+          </button>
+          <button class="selection" data-selection="rock">
+            <img class="small-icon" src="/rock.png" alt="" />
+          </button>
+          <button class="selection" data-selection="scissors">
+            <img class="small-icon" src="/scissors.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="score">
+          <h2>Ties: <span class="win-score" data-tie-score>0</span></h2>
+        </div>
+        <div><h2 class="message">BEGIN...</h2></div>
+      </div>
+      <div class="column">
+        <div class="score">
+          <h2>
+            COMPUTER: <span class="win-score" data-computer-score>0</span>
+          </h2>
+        </div>
+        <div class="selection-icon">
+          <img class="computer-big-icon" src="" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
